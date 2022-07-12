@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: 
+  Here are some
+  details about
+  the template.
+  
+Parameters:
+  
+
+  
+Mappings:
+  
+
+  
+Resources:
+
+   mySG:
+     Type: AWS::EC2::SecurityGroup
+     Properties:
+       GroupDescription: "String" # Required
+       GroupName: "String"
+       SecurityGroupEgress:
+         SecurityGroupEgress
+       SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+         -IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+       Tags:
+         Tags
+       VpcId: "String"
+
+  
+Outputs:

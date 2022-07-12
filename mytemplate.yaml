@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  This template launcehhes an EC2 with a security group taht enables SSH  
+Resources:
+  MyEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0022f774911c1d690
+      InstanceType: t2.micro
+      KeyName: volkan  # please use your own key file without extension
+      SecurityGroups:
+        - ssh
+      Tags:
+        - Key: Name
+          Value: First-Cfn-Instance
+           
